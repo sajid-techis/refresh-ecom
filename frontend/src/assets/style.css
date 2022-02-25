@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+/***************************
+****Header
+****************************/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 14px 28px rgb(0 0 0 / 25%);
+    background-color: #fff;
+}
+header .logo {
+    width: 70%;
+    padding: 5px 20px;
+}
+header .logo img {
+    width: 6%;
+}
+header nav {
+    display: flex;
+    justify-content: space-around;
+    width: 10%;
+}
+/***************************
+****Home
+****************************/
+.main-image img {
+    width: 100%;
+}
+.heading h2 {
+    padding: 10px 50px;
+}
+.item-container {
+    margin: 10px 100px;
+}
+.item-container .item-grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.item-container .item-grid .item-background {
+    background-color: rgb(235, 235, 235, 70%);
+    width: 240px;
+    height: 400px;
+}
+.item-container .item-grid .item-background .item-image img {
+    height: 300px;
+    padding: 50px 50px;
+}
+.item-container .item-grid .item-bottom {
+    margin: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+}
+.item-container .item-grid .item-bottom button {
+    background-color: #59af0f;
+    color: #fff;
+    padding: 5px 5px;
+    border: 0;
+}
+.item-container .item-grid .item-bottom .added-cart {
+    background-color: #59af0f;
+    color: #fff;
+    padding: 5px 5px;
+    border: 0;
+    border-radius: 5px;
+}
+#minus {
+    padding: 0px 3px;
+}
+#plus {
+    padding: 0px 3px;
+}
+/******************************
+*******Footer
+*******************************/
+.foot {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 30px 170px 30px 100px;
+    background-color: #fff;
+    padding: 10px 0px;
+    gap: 30px;
+}
+.foot button {
+    background-color: #59af0f;
+    padding: 10px 20px;
+    margin-right: 40px;
+    border: 0;
+    border-radius: 10px;
+    color: #fff;
+}
+.refresh {
+    text-align: center;
+    color: #808080;
+}
+.refresh img {
+    width: 10%;
+}
+.refresh span {
+    font-weight: 400;
+    color: #000;
+}
+.copyright {
+    border-top: 1px solid #808080;
+    text-align: center;
+}
+.copyright p {
+    padding: 10px 0px;
+}
+/******************************
+*******Media screen
+*******************************/
+@media screen and (max-width: 500px) {
+    .refresh p {
+        font-size: 10px;
+    }
+    .refresh img {
+        width: 15%;
+    }
+}
+/******************************
+*******Cart
+*******************************/
+.images {
+    margin: 200px 70px;
+}
+.images ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 10px 0px;
+}
+.circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 1px solid #000;
+}
+.circle img {
+    height: 80px;
+    padding: 15px 45px;
+}
+button.number {
+    padding: 5px 10px;
+    background-color: #fff;
+    border: 1px solid #808080;
+    border-radius: 10px;
+    letter-spacing: 5px;
+}
+/******************************
+*******Check OUT
+*******************************/
+.box {
+    width: 100%;
+    height: 250px;
+    text-align: center;
+    font-size: 40px;
+    background-color: #ff8f00;
+}
+.box p {
+    padding: 100px 0px;
+    color: #fff;
+    font-weight: 500;
+}
+.details {
+    margin: 50px 150px;
+}
+.box2 {
+    margin: 50px 0px;
+}
+.box2 table {
+    width: 55%;
+    border-spacing: 10px;
+}
+.td-item {
+    width: 60%;
+}
+.td-price {
+    border: 1px solid #808080;
+    width: 5%;
+    padding: 5px 15px;
+    border-radius: 15px;
+}
+#total-price, #item-count,#subtotal {
+    border-top: 1px solid #000;
+    padding: 10px 0px;
+}
